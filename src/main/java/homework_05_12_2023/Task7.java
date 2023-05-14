@@ -3,6 +3,10 @@ package homework_05_12_2023;
 import java.io.*;
 
 public class Task7 {
+    public static void main(String[] args) {
+        execution();
+    }
+
     public static void mergeFiles(String[] inputFiles, String outputFile) throws IOException, FormatException {
         for (String inputFile : inputFiles) {
             if (!new File(inputFile).exists()) {
@@ -51,9 +55,5 @@ public class Task7 {
         public FormatException(String message, Throwable cause) {
             super(message, cause);
         }
-    }
-
-    public static void main(String[] args) {
-        execution();
     }
 }
