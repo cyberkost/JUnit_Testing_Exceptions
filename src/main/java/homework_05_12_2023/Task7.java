@@ -10,13 +10,10 @@ public class Task7 {
             }
         }
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile))) {
-            // Iterate over each input file
             for (String inputFile : inputFiles) {
                 try (BufferedReader reader = new BufferedReader(new FileReader(inputFile))) {
                     String line;
-                    // Read each line from the input file
                     while ((line = reader.readLine()) != null) {
-                        // Write the line to the output file
                         writer.write(line);
                         writer.newLine();
                     }
